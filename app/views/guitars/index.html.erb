@@ -1,0 +1,73 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Guitars</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Serial</th>
+      <th>Model</th>
+      <th>Body wood</th>
+      <th>Neck wood</th>
+      <th>Fingerboard</th>
+      <th>Neck shape</th>
+      <th>Scale length</th>
+      <th>Nut width</th>
+      <th>Nut material</th>
+      <th>Frets</th>
+      <th>Fret count</th>
+      <th>Inlays</th>
+      <th>Inlay description</th>
+      <th>Hardware</th>
+      <th>Bridge</th>
+      <th>Tuners</th>
+      <th>Controls</th>
+      <th>Switch</th>
+      <th>Knobs</th>
+      <th>Pickups</th>
+      <th>Body finish</th>
+      <th>Neck finish</th>
+      <th>Strings</th>
+      <th>Case</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @guitars.each do |guitar| %>
+      <tr>
+        <td><%= guitar.serial %></td>
+        <td><%= guitar.model %></td>
+        <td><%= guitar.body_wood %></td>
+        <td><%= guitar.neck_wood %></td>
+        <td><%= guitar.fingerboard %></td>
+        <td><%= guitar.neck_shape %></td>
+        <td><%= guitar.scale_length %></td>
+        <td><%= guitar.nut_width %></td>
+        <td><%= guitar.nut_material %></td>
+        <td><%= guitar.frets %></td>
+        <td><%= guitar.fret_count %></td>
+        <td><%= guitar.inlays %></td>
+        <td><%= guitar.inlay_description %></td>
+        <td><%= guitar.hardware %></td>
+        <td><%= guitar.bridge %></td>
+        <td><%= guitar.tuners %></td>
+        <td><%= guitar.controls %></td>
+        <td><%= guitar.switch %></td>
+        <td><%= guitar.knobs %></td>
+        <td><%= guitar.pickups %></td>
+        <td><%= guitar.body_finish %></td>
+        <td><%= guitar.neck_finish %></td>
+        <td><%= guitar.strings %></td>
+        <td><%= guitar.case %></td>
+        <td><%= link_to 'Show', guitar %></td>
+        <td><%= link_to 'Edit', edit_guitar_path(guitar) %></td>
+        <td><%= link_to 'Destroy', guitar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Guitar', new_guitar_path %>

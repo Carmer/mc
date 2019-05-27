@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nickname:</strong>
+  <%= @wood.nickname %>
+</p>
+
+<p>
+  <strong>Origin:</strong>
+  <%= @wood.origin %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @wood.grade %>
+</p>
+
+<p>
+  <strong>Desity:</strong>
+  <%= @wood.desity %>
+</p>
+
+<p>
+  <strong>Speed of sound:</strong>
+  <%= @wood.speed_of_sound %>
+</p>
+
+<p>
+  <strong>Modulus of elasticity:</strong>
+  <%= @wood.modulus_of_elasticity %>
+</p>
+
+<p>
+  <strong>Radiation coefficient:</strong>
+  <%= @wood.radiation_coefficient %>
+</p>
+
+<%= link_to 'Edit', edit_wood_path(@wood) %> |
+<%= link_to 'Back', woods_path %>

@@ -1,0 +1,137 @@
+<%= form_with(model: guitar, local: true) do |form| %>
+  <% if guitar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(guitar.errors.count, "error") %> prohibited this guitar from being saved:</h2>
+
+      <ul>
+      <% guitar.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :serial %>
+    <%= form.text_field :serial %>
+  </div>
+
+  <div class="field">
+    <%= form.label :model %>
+    <%= form.text_field :model %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body_wood %>
+    <%= form.text_field :body_wood %>
+  </div>
+
+  <div class="field">
+    <%= form.label :neck_wood %>
+    <%= form.text_field :neck_wood %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fingerboard %>
+    <%= form.text_field :fingerboard %>
+  </div>
+
+  <div class="field">
+    <%= form.label :neck_shape %>
+    <%= form.text_field :neck_shape %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scale_length %>
+    <%= form.text_field :scale_length %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nut_width %>
+    <%= form.text_field :nut_width %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nut_material %>
+    <%= form.text_field :nut_material %>
+  </div>
+
+  <div class="field">
+    <%= form.label :frets %>
+    <%= form.text_field :frets %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fret_count %>
+    <%= form.text_field :fret_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inlays %>
+    <%= form.text_field :inlays %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inlay_description %>
+    <%= form.text_field :inlay_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hardware %>
+    <%= form.text_field :hardware %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bridge %>
+    <%= form.text_field :bridge %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tuners %>
+    <%= form.text_field :tuners %>
+  </div>
+
+  <div class="field">
+    <%= form.label :controls %>
+    <%= form.text_field :controls %>
+  </div>
+
+  <div class="field">
+    <%= form.label :switch %>
+    <%= form.text_field :switch %>
+  </div>
+
+  <div class="field">
+    <%= form.label :knobs %>
+    <%= form.text_field :knobs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pickups %>
+    <%= form.text_field :pickups %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body_finish %>
+    <%= form.text_field :body_finish %>
+  </div>
+
+  <div class="field">
+    <%= form.label :neck_finish %>
+    <%= form.text_field :neck_finish %>
+  </div>
+
+  <div class="field">
+    <%= form.label :strings %>
+    <%= form.text_field :strings %>
+  </div>
+
+  <div class="field">
+    <%= form.label :case %>
+    <%= form.text_field :case %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

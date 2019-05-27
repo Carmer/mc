@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nickname: MyString
+  origin: MyString
+  grade: MyString
+  desity: MyString
+  speed_of_sound: MyString
+  modulus_of_elasticity: MyString
+  radiation_coefficient: MyString
+
+two:
+  nickname: MyString
+  origin: MyString
+  grade: MyString
+  desity: MyString
+  speed_of_sound: MyString
+  modulus_of_elasticity: MyString
+  radiation_coefficient: MyString

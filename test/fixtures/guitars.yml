@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  serial: MyString
+  model: MyString
+  body_wood: MyString
+  neck_wood: MyString
+  fingerboard: MyString
+  neck_shape: MyString
+  scale_length: MyString
+  nut_width: MyString
+  nut_material: MyString
+  frets: MyString
+  fret_count: MyString
+  inlays: MyString
+  inlay_description: MyString
+  hardware: MyString
+  bridge: MyString
+  tuners: MyString
+  controls: MyString
+  switch: MyString
+  knobs: MyString
+  pickups: MyString
+  body_finish: MyString
+  neck_finish: MyString
+  strings: MyString
+  case: MyString
+
+two:
+  serial: MyString
+  model: MyString
+  body_wood: MyString
+  neck_wood: MyString
+  fingerboard: MyString
+  neck_shape: MyString
+  scale_length: MyString
+  nut_width: MyString
+  nut_material: MyString
+  frets: MyString
+  fret_count: MyString
+  inlays: MyString
+  inlay_description: MyString
+  hardware: MyString
+  bridge: MyString
+  tuners: MyString
+  controls: MyString
+  switch: MyString
+  knobs: MyString
+  pickups: MyString
+  body_finish: MyString
+  neck_finish: MyString
+  strings: MyString
+  case: MyString

@@ -1,0 +1,52 @@
+<%= form_with(model: wood, local: true) do |form| %>
+  <% if wood.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wood.errors.count, "error") %> prohibited this wood from being saved:</h2>
+
+      <ul>
+      <% wood.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nickname %>
+    <%= form.text_field :nickname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :origin %>
+    <%= form.text_field :origin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grade %>
+    <%= form.text_field :grade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desity %>
+    <%= form.text_field :desity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :speed_of_sound %>
+    <%= form.text_field :speed_of_sound %>
+  </div>
+
+  <div class="field">
+    <%= form.label :modulus_of_elasticity %>
+    <%= form.text_field :modulus_of_elasticity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :radiation_coefficient %>
+    <%= form.text_field :radiation_coefficient %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

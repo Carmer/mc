@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Woods</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nickname</th>
+      <th>Origin</th>
+      <th>Grade</th>
+      <th>Desity</th>
+      <th>Speed of sound</th>
+      <th>Modulus of elasticity</th>
+      <th>Radiation coefficient</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @woods.each do |wood| %>
+      <tr>
+        <td><%= wood.nickname %></td>
+        <td><%= wood.origin %></td>
+        <td><%= wood.grade %></td>
+        <td><%= wood.desity %></td>
+        <td><%= wood.speed_of_sound %></td>
+        <td><%= wood.modulus_of_elasticity %></td>
+        <td><%= wood.radiation_coefficient %></td>
+        <td><%= link_to 'Show', wood %></td>
+        <td><%= link_to 'Edit', edit_wood_path(wood) %></td>
+        <td><%= link_to 'Destroy', wood, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wood', new_wood_path %>
