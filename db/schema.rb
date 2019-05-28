@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_27_165833) do
+ActiveRecord::Schema.define(version: 2019_05_27_162025) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -75,7 +75,7 @@ ActiveRecord::Schema.define(version: 2019_05_27_165833) do
   end
 
   create_table "woods", force: :cascade do |t|
-    t.string "nickname"
+    t.string "species"
     t.string "origin"
     t.string "grade"
     t.string "density"
@@ -84,7 +84,6 @@ ActiveRecord::Schema.define(version: 2019_05_27_165833) do
     t.string "radiation_coefficient"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "species"
   end
 
 end

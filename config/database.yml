@@ -10,17 +10,11 @@ default: &default
   encoding: unicode
   port: 5432
   timeout: 5000
-
-staging:
-  <<: *default
-  database: workflows_api_staging
-  host: allogy-development-postgresql-01.cuqk3hejzvlx.us-east-1.rds.amazonaws.com
-  password: ZlTcLDovXkv9Z`8zArlc
+  host: 127.0.0.1
 
 development:
   <<: *default
   database: midcoast_development
-  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
